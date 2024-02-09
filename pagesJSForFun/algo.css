@@ -1,0 +1,379 @@
+.algo {
+    
+}
+.pooh {
+    background-image: url(../img/pooh1.png);
+    width: 300px;
+    height: 526px;
+    background-position: center center;
+    background-size: cover;
+}
+.algo__sort {
+    display: flex;
+}
+.algo__sort_run {
+    
+}
+.algo__sort_title {
+    color: #000;
+font-family: Mate SC;
+font-size: 32px;
+font-weight: 400;
+line-height: 50px; 
+letter-spacing: 1px;
+margin: 50px;
+margin-bottom: 30px;
+max-width: 650px;
+}
+.algo__sort_enter {
+max-width: 676px;
+height: 209px;
+border-radius: 40px;
+border: 1px solid #958888;
+background: #FFF;
+margin: 0 50px;
+}
+.algo__sort_enter-title {
+    color: #000;
+font-family: Mate SC;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+letter-spacing: 1px;
+margin: 16px 23px;
+}
+.algo__sort_enter-place {
+width: 80%;
+height: 46px;
+border-radius: 20px;
+background: #E9E1D5;
+ margin: 10px 10%;
+color: #000;
+font-family: Mate SC;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+text-align: center;
+}
+.algo__sort_enter-button {
+width: 89px;
+height: 40px;
+border-radius: 20px;
+border: 2px solid hsl(200, 1%, 47%);
+background: #BBA584;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+color: #000;
+font-family: Mate SC;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 166.667% */
+letter-spacing: 1px;
+text-align: center;
+margin: 0 293px;
+}
+.algo__sort_enter-button:hover {
+    border: 2px solid #946767;
+    background: #9e8f8f; 
+    font-size: 25px;
+    font-weight: 300;
+    cursor: pointer;
+    }
+
+.algo__sort_answer {
+max-width: 676px;
+height: 748px;
+border-radius: 40px;
+border: 1px solid #958888;
+background: #FFF;
+margin: 20px 50px;
+text-align: center center;
+}
+.algo__sort_answer-title {
+    color: #000;
+    font-family: Mate SC;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: 1px;
+    margin: 16px 23px;
+}
+.algo__sort_answer-place {
+    width: 635px;
+    height: 46px;
+    border-radius: 20px;
+    background: #E9E1D5;
+    margin: 0 0px 15px 23px;
+    color: #000;
+    font-family: Mate SC;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 45px;
+}
+
+.algo__answer_label{
+    font-family: Mate SC;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.algo__answer_point{
+    display: flex;
+    margin-right: 71px;
+    margin-left: 58px;
+    align-items: center;
+    justify-content: space-between;
+}
+.algo__sort_answer-place_small{
+    width: 192px;
+    height: 46px;
+    border-radius: 20px;
+    background: #E9E1D5;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: Mate SC;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 45px;
+}
+
+.pooh_and_friends{
+    background-image: url(../img/pooh2.png);
+    width: 494px;
+    height: 351px;
+    background-position: center center;
+    background-size: cover;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+/* algo desctiption */
+
+.algo__discription {
+    margin-top: 50px ;
+    padding-bottom: 50px;
+}
+.algo__discription_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    gap:40px;
+}
+.algo__discription_item {
+  
+}
+.algo__discription_item_last{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.algo__discription_item_title {
+width: 362px;
+height: 88px;
+border-radius: 20px;
+border: 2px solid #767879;
+background: #BBA584;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+text-align: center;
+font-family: Mate SC;
+font-size: 35px;
+font-weight: 400;
+line-height: 40px; /* 114.286% */
+letter-spacing: 1px;
+}
+.algo__discription_item_text {
+width: 362px;
+height: 154px;
+border-radius: 40px;
+border: 1px solid #958888;
+background: #FFF;
+padding: 22px;
+font-family: Mate SC;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+letter-spacing: 1px;
+margin: 8px 0;
+display: none;
+}
+
+.algo__discription_item_title:hover{
+    border: 2px solid #946767;
+    background: #9e8f8f; 
+    font-size: 37px;
+    font-weight: 420;
+}
+
+.description__visibility{
+    display: block;
+}
+
+/* adaptivchik */
+@media (min-width:980px) and (max-width:1335px) {
+    .pooh {
+        /* display: none; */
+    }
+    .algo__sort_run,.algo__sort_answer,.algo__sort_enter {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width:480px) and (max-width:980px) {
+    .pooh {
+        margin: 0 auto;
+        width: 300px;
+        height: 170px;
+    }
+    .algo__sort_run,.algo__sort_answer,.algo__sort_enter {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .algo__sort {
+        display: block;
+    }
+    .algo__sort_title {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width:180px) and (max-width:800px) {
+
+    .pooh {
+        background-image: url(../img/pooh1.png);
+        width: 300px;
+        height: 170px;
+        background-position: center center;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    .algo__sort {
+        display: block;
+    }
+    .algo__sort_title {
+    font-size: 15px;
+    line-height: 20px; 
+    margin: 20px;
+    margin-top: 0;
+    padding-top: 20px;
+    width: auto;
+    }
+    .algo__sort_enter {
+    max-width: 300px;
+    height: 160px;
+    margin: 0 auto;
+    }
+    .algo__sort_enter-title {
+    font-size: 13px;
+    line-height: 15px;
+    }
+    .algo__sort_enter-place {
+    max-width: 250px;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 0;
+    }
+    .algo__sort_enter-button {
+    width: 40px;
+    height: 25px;
+    border: 1px solid hsl(200, 1%, 47%);
+    font-size: 15px;
+    line-height: 25px; 
+    margin: 10px auto;
+    }
+    
+    .algo__sort_answer {
+    width: 300px;
+    height: 480px;
+    margin: 10px auto;
+    text-align: center center;
+    }
+    .algo__sort_answer-title {
+        font-size: 15px;
+        line-height: 20px; 
+    }
+    .algo__sort_answer-place {
+        width: 200px;
+        height: 30px;
+        margin: 0 0 auto  0;
+        font-size: 15px;
+        text-align: center;
+        line-height: 25px;
+    }
+    
+    .algo__answer_label{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .algo__answer_point{
+        display: flex;
+        margin: 5px 10px;
+    }
+    .algo__sort_answer-place_small{
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .pooh_and_friends{
+        background-image: url(../img/pooh2.png);
+        width: 250px;
+        height: 170px;
+        margin:0 auto;
+    }
+    .algo__discription {
+        margin: 0 auto;
+    }
+    .algo__discription_grid {
+        display: block;
+    }
+    .algo__discription_item {
+        width: 220px;
+      margin: 10px auto;
+    }
+    .algo__discription_item_last{
+        
+    }
+    .algo__discription_item_title {
+    width: 220px;
+    height: 45px;
+    font-size: 15px;
+    line-height: 20px; 
+    }
+    .algo__discription_item_text {
+    width: 220px;
+    height: auto;
+    padding: 22px;
+    font-size: 15px;
+    line-height: 20px; 
+    letter-spacing: 1px;
+    margin: 8px 0;
+    display: none;
+    }
+    
+    .algo__discription_item_title:hover{
+        font-size: 15px;
+        border: 2px solid #767879;
+background: #BBA584;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .description__visibility{
+        display: block;
+    }
+}

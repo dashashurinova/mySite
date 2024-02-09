@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./pagesJSForFun/pagesJSForFun.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Anton&family=Dancing+Script&family=Forum&family=IM+Fell+DW+Pica&family=Inter:wght@400;500&family=Meddon&family=Monoton&family=Montaga&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Anton&family=Dancing+Script&family=Forum&family=IM+Fell+DW+Pica&family=Inter:wght@400;500&family=Mate+SC&family=Meddon&family=Monoton&family=Montaga&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <title>JSForFun</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__label">Shurinova</div>
+            <button class="burger__button">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </button>
+            <ul class="nav__tools">
+                <li class="nav__item"><a href="./index.html">about me</a></li>
+                <li class="nav__item"><a href="./portfolio.html">portfolio</a></li>
+                <li class="nav__item"><a href="./sliders.html">sliders page</a></li>
+                <li class="nav__item"><a href="./contacts.html">contacts</a></li>
+                <li class="nav__item nav__item_active"><a href="#">JS for fun</a></li>
+                <li class="nav__item"><a href="./shop.php">SQL</a></li>
+            </ul>
+        </nav>
+        <div class="header__title">JS <br>FOR <br>FUN</div>
+
+
+    </header>
+    <main class="main">
+
+
+
+             <section class="algo">
+                <div class="algo__sort">
+                    <div class="pooh"></div>
+                    
+                    <div class="algo__sort_run">
+                        <p class="algo__sort_title">Hi. I’m Pooh Bear. Let’s play with numbers and learn something about
+                            algorithms.</p>
+                        <div class="algo__sort_enter">
+                            <div class="algo__sort_enter-title">Enter your mass of numbers down below
+                                and I will process them using quicksort and recursion.</div>
+                            <input class="algo__sort_enter-place" id="arr__enter"></input>
+                            <div class="algo__sort_enter-button">Run</div>
+                        </div>
+                        <div class="algo__sort_answer">
+                            <div class="algo__sort_answer-title">My answer:</div>
+                            <div class="algo__answer_point">
+                                <div class="algo__answer_label">sorting:</div>
+                                <div class="algo__sort_answer-place" id="answer__arr"></div>
+                            </div>
+                            <div class="algo__answer_point">
+                                <div class="algo__answer_label">min number:</div>
+                                <div class="algo__sort_answer-place_small" id="answer__min"></div>
+                            </div>
+                            <div class="algo__answer_point">
+                                <div class="algo__answer_label">max number:</div>
+                                <div class="algo__sort_answer-place_small" id="answer__max"></div>
+                            </div>
+                            <div class="algo__answer_point">
+                                <div class="algo__answer_label">summ:</div>
+                                <div class="algo__sort_answer-place_small" id="answer__summ"></div>
+                            </div>
+                            <div class="algo__answer_point">
+                                <div class="algo__answer_label">ammount of numbers:</div>
+                                <div class="algo__sort_answer-place_small" id="answer__ammount"></div>
+                            </div>
+                            <div class="pooh_and_friends"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section> 
+
+            <section class="algo__discription">
+                <div class="algo__discription_grid">
+                    <div class="algo__discription_item">
+                        <button class="algo__discription_item_title">dijkstra<br>
+                            algorithm</button>
+                        <div class="algo__discription_item_text">helps you to find the shortest
+                            way from point a to point b.
+                            the way need not to be the
+                            fastest one. </div>
+                    </div>
+                    <div class="algo__discription_item">
+                        <button class="algo__discription_item_title">width search
+                            algorithm</button>
+                        <div class="algo__discription_item_text">works with graphs. finds the fastest way from point a
+                            to point b.</div>
+                    </div>
+                    <div class="algo__discription_item">
+                        <button class="algo__discription_item_title">greedy<br>
+                            algorithm</button>
+                        <div class="algo__discription_item_text">make possible to find the approximate answer, closest
+                            to the best decision.</div>
+                    </div>
+                    <div class="algo__discription_item">
+                        <button class="algo__discription_item_title">dynamic
+                            programming</button>
+                        <div class="algo__discription_item_text">solve the task by dividing a big task to smaller ones
+                            which are to be solved at first</div>
+                    </div>
+                    <div class="algo__discription_item algo__discription_item_last">
+                        <button class="algo__discription_item_title">k nearest <br>
+                            neighbors</button>
+                        <div class="algo__discription_item_text">the common way of making prognoses and recommendations
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="calculation">
+                <p class="calculation__title">Calculate which programming languages fit you
+                    the best:</p>
+                <div class="calculation__container_item">
+                    <label class="calculation__container_item" for="drink">What is your
+                        favourite drink</label>
+                    <select name="drink" id="drink" onchange="calculateLanguage()">
+                        <option value="0">--</option>
+                        <option value="1">Coffee</option>
+                        <option value="2">Cola</option>
+                        <option value="3">Woter</option>
+                        <option value="4">Tea</option>
+                    </select>
+                </div>
+                <div class="calculation__container_item">
+                    <label class="calculation__container_item" for="season">Your favourite season</label>
+                    <select name="season" id="season" onchange="calculateLanguage()">
+                        <option value="0">--</option>
+                        <option value="1">Winter</option>
+                        <option value="2">Spring</option>
+                        <option value="3">Summer</option>
+                        <option value="4">Autumn</option>
+                    </select>
+                </div>
+
+                <p class="calculation__container_item">The best languages for you are:</p>
+                <div class="answer" id="answer">XX</div>
+
+            </section> 
+
+        <div class="main__content">
+             <div class="time_date">
+                <div class="time_on_site__container">
+                    <p class="time_on_site__title">The ammount of time that you've spent on this page</p>
+                    <div class="time_on_site">
+                        <div id="min_on_site">00</div>
+                        <div id="sec_on_site">00</div>
+                    </div>
+                </div>
+                <div class="date">
+                    <span id="dayname">Day</span>
+                    <span id="months">Months</span>
+                    <span id="daynum">00</span>
+                    <span id="year">Year</span>
+                    <span class="time"></span>
+                </div>
+            </div>
+            <a href="https://www.gismeteo.ru/weather-krasnoyarsk-4674/" target="_blank">
+            <div class="weather">
+             <div id="m-booked-bl-simple-43091">
+                    <div class="booked-wzs-160-110 weather-customize" style="background-color:#137AE9;width:200px;"
+                        id="width2">
+                        <div class="booked-wzs-160-110_in">
+                            <div class="booked-wzs-160-data">
+                                <div class="booked-wzs-160-left-img wrz-18"></div>
+                                <div class="booked-wzs-160-right">
+                                    <div class="booked-wzs-day-deck">
+                                        <div class="booked-wzs-day-val">
+                                            <div class="booked-wzs-day-number"><span class="plus">+</span>16</div>
+                                            <div class="booked-wzs-day-dergee">
+                                                <div class="booked-wzs-day-dergee-val">&deg;</div>
+                                                <div class="booked-wzs-day-dergee-name">C</div>
+                                            </div>
+                                        </div>
+                                        <div class="booked-wzs-day">
+                                            <div class="booked-wzs-day-d"><span class="plus">+</span>17&deg;</div>
+                                            <div class="booked-wzs-day-n"><span class="plus">+</span>9&deg;</div>
+                                        </div>
+                                    </div>
+                                    <div class="booked-wzs-160-info">
+                                        <div class="booked-wzs-160-city smolest">Krasnoyarsk</div>
+                                        <div class="booked-wzs-160-date">Wednesday, 06</div>
+                                    </div>
+                                </div>
+                                </div>
+                            <div class="booked-wzs-center"><span class="booked-wzs-bottom-l"> See 7-Day Forecast</span>
+                            </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript"> var css_file = document.createElement("link"); var widgetUrl = location.href; css_file.setAttribute("rel", "stylesheet"); css_file.setAttribute("type", "text/css"); css_file.setAttribute("href", 'https://s.bookcdn.com/css/w/booked-wzs-widget-160.css?v=0.0.1'); document.getElementsByTagName("head")[0].appendChild(css_file);
+                        function setWidgetData_43091(data) {
+                            if (typeof (data) != 'undefined' && data.results.length > 0) {
+                                for (var i = 0; i < data.results.length; ++i) {
+                                    var objMainBlock = document.getElementById('m-booked-bl-simple-43091');
+                                    if (objMainBlock !== null) { var copyBlock = document.getElementById('m-bookew-weather-copy-' + data.results[i].widget_type); objMainBlock.innerHTML = data.results[i].html_code; if (copyBlock !== null) objMainBlock.appendChild(copyBlock); }
+                                }
+                            } else { alert('data=undefined||data.results is empty'); }
+                        }
+                        var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=17608;type=1;scode=62085;ltid=3540;domid=;anc_id=87170;countday=undefined;cmetric=1;wlangID=1;color=137AE9;wwidth=200;header_color=ffffff;text_color=333333;link_color=08488D;border_form=1;footer_color=ffffff;footer_text_color=333333;transparent=0;v=0.0.1";
+                        widgetSrc += ';ref=' + widgetUrl; widgetSrc += ';rand_id=43091';
+                        var weatherBookedScript = document.createElement("script");
+                        weatherBookedScript.setAttribute("type", "text/javascript");
+                        weatherBookedScript.src = widgetSrc; document.body.appendChild(weatherBookedScript) </script>
+                </div>
+
+            </div></a>
+
+            <!-- <section class="FAQ">
+
+            </section> -->
+
+    </main>
+    <footer class="footer">
+        <div class="footer__title">© Darya Shurinova</div>
+        <div class="footer__year">2023</div>
+    </footer>
+
+    <script src="./burger.js"></script>
+    <script src="./JSForFun.js"></script>
+    <script src="./AlgoSort.js"></script>
+</body>
+
+</html>

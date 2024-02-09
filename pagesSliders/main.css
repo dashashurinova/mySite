@@ -1,0 +1,247 @@
+.main{
+    background: url(../img/slidersFon.jpg);
+}
+/* ********************* choise */
+.main__seasons {
+    display: flex;
+    max-width: 1040px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 64px;
+    margin-bottom: 17px;
+}
+.main__seasons_item-label {
+color: #000;
+font-family: Mate SC;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 70px;
+letter-spacing: 3px;
+}
+
+label:checked {
+    font-weight: 600;
+    font-size: 60px;
+}
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #262222;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 3px;
+    margin: 3px 7px;
+}
+    
+input[type="radio"]:checked {
+    background-color: #555555;
+}
+:checked + label {
+font-weight: bold; 
+ }
+
+ /* ******************************* slider left*/
+.slider {
+    display: flex;
+}
+
+.slider__left_window {
+width: 355px;
+height: 228px;
+border-radius: 20px;
+border: 1px solid #D3CDCA;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+overflow: hidden;
+margin-left: 23px;
+height: 100%;
+margin-top: 130px;
+}
+
+.slider__left_img {
+    width: 355px;
+}
+
+.slider__left {
+display: flex;
+width: calc(355px*5);
+position: relative;
+transition: 0.8s;
+}
+
+.slider__left_img img {
+width: 100%;
+height: 100%;
+}
+
+ /* ******************************* slider main*/
+.slider__main_window {
+   width: 613px;
+    border-radius: 20px;
+    border: 1px solid #D3CDCA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    height: 388px;
+    margin:36px;
+    }
+    
+    .slider__main_img {
+        width: 613px;
+    }
+    
+    .slider__main {
+    display: flex;
+    width: calc(613px*5);
+    position: relative;
+    transition: 0.8s;
+    }
+    
+    .slider__main_img img {
+    width: 100%;
+    height: 100%;
+    }
+
+ /* ******************************* slider right*/
+ .slider__right_window {
+    width: 355px;
+    height: 228px;
+    border-radius: 20px;
+    border: 1px solid #D3CDCA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin-right: 23px;
+    margin-left: auto;
+    height: 100%;
+    margin-top: 130px;
+    }
+    
+    .slider__right_img {
+    width: 355px;
+    }
+    
+    .slider__right {
+    display: flex;
+    width: calc(355px*5);
+    position: relative;
+    transition: 0.8s;
+    }
+    
+    .slider__right_img img {
+    width: 355px;
+    height: 100%;
+    }
+
+
+ /* ******************************* slider nav*/
+.slider_nav{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom:140px;
+}
+
+.pagination {
+    display: flex;
+    /* margin: 0 auto; */
+    max-width: 350px;
+}
+.pagination__item {
+width: 30px;
+height: 30px;
+background-color: #6F6868;
+border-radius: 20px;
+margin:  12px 17px 0 17px ;
+}
+
+.pagination__item_chosen{
+    background-color: #871912;
+}
+
+.button__prev {
+    height: 59px;
+    margin-right: 230px;
+    margin-left: auto;
+    padding-bottom: -17px;
+}
+.button__next {
+    height: 59px;
+    margin-left: 230px;
+    margin-right: auto;
+}
+
+
+/* ************************************* mobile  */
+@media (min-width:180px) and (max-width:480px) {
+    .slider_nav{
+        display: none;
+    }
+    .slider__main_window {
+        width: 300px;
+        height: 180px;
+        margin:20px auto;
+        }
+         
+        .slider__main_img {
+        width: 300px;
+        }
+         
+        .slider__main {
+        display: flex;
+        width: calc(300px*5);
+        position: relative;
+        transition: 0.8s;
+        }
+         
+        .slider__main_img img {
+        width: 100%;
+        height: 100%;
+        }
+        .slider__right_window {
+            display: none;
+        }
+        .slider__left_window {
+            display: none;
+        }
+/* ********************* choise */
+.main__seasons {
+    display: flex;
+    max-width: 1040px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+.main__seasons_item-label {
+color: #000;
+font-family: Mate SC;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 1px;
+}
+
+label:checked {
+    font-weight: 600;
+    font-size: 20px;
+}
+input[type="radio"] {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #262222;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 1px;
+    margin: 2px 2px;
+}
+    
+input[type="radio"]:checked {
+    background-color: #555555;
+}
+:checked + label {
+font-weight: bold; 
+ }
+
+    }
+

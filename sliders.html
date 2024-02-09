@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./pagesSliders/pagesSliders.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Anton&family=Dancing+Script&family=Forum&family=IM+Fell+DW+Pica&family=Inter:wght@400;500&family=Meddon&family=Monoton&family=Montaga&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Anton&family=Dancing+Script&family=Forum&family=IM+Fell+DW+Pica&family=Inter:wght@400;500&family=Mate+SC&family=Meddon&family=Monoton&family=Montaga&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <title>Sliders</title>
+</head>
+
+<body class="body">
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__label">Shurinova</div>
+            <button class="burger__button">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </button>
+            <ul class="nav__tools">
+                <li class="nav__item"><a href="./index.html">about me</a></li>
+                <li class="nav__item"><a href="./portfolio.html">portfolio</a></li>
+                <li class="nav__item nav__item_active"><a href="#">sliders page</a></li>
+                <li class="nav__item"><a href="./contacts.html">contacts</a></li>
+                <li class="nav__item"><a href="./JSForFun.html">JS for fun</a></li>
+                <li class="nav__item"><a href="./shop.php">SQL</a></li>
+            </ul>
+        </nav>
+        <div class="header__title">Sliders page</div>
+        <audio id="audio" src="./audio/VivaldiAutumn.mp3" autoplay controls loop></audio>
+        
+    </header>
+    <main class="main">
+        <div class="main__seasons">
+            <div class="main__seasons_item">
+                <input type="radio" id="autumn" name="seasons" value="autumn" checked />
+                <label for="autumn" class="main__seasons_item-label">Autumn</label>
+            </div>
+            <div class="main__seasons_item">
+                <input type="radio" id="winter" name="seasons" value="winter" />
+                <label for="winter" class="main__seasons_item-label">Winter</label>
+            </div>
+            <div class="main__seasons_item">
+                <input type="radio" id="spring" name="seasons" value="spring" />
+                <label for="spring" class="main__seasons_item-label">Spring</label>
+            </div>
+            <div class="main__seasons_item">
+                <input type="radio" id="summer" name="seasons" value="summer" />
+                <label for="summer" class="main__seasons_item-label">Summer</label>
+            </div>
+        </div>
+
+
+        <!-- ********slider -->
+
+        <div class="slider">
+            <div class="slider__left_window" id="slider__left_window">
+                <div class="slider__left">
+                    <div class="slider__left_img"><img id="left1" src="./img/sliderAutumn/au1.jpg" alt="au1"></div>
+                    <div class="slider__left_img"><img id="left2" src="./img/sliderAutumn/au2.jpg" alt="au2"></div>
+                    <div class="slider__left_img"><img id="left3" src="./img/sliderAutumn/au3.jpg" alt="au3"></div>
+                    <div class="slider__left_img"><img id="left4" src="./img/sliderAutumn/au4.jpg" alt="au4"></div>
+                    <div class="slider__left_img"><img id="left5" src="./img/sliderAutumn/au5.jpg" alt="au5"></div>
+                </div>
+            </div>
+
+            <div class="slider__main_window" id="slider__main_window">
+                <div class="slider__main">
+                    <div class="slider__main_img"><img id="main1" src="./img/sliderAutumn/au2.jpg" alt="au2"></div>
+                    <div class="slider__main_img"><img id="main2" src="./img/sliderAutumn/au3.jpg" alt="au3"></div>
+                    <div class="slider__main_img"><img id="main3" src="./img/sliderAutumn/au4.jpg" alt="au4"></div>
+                    <div class="slider__main_img"><img id="main4" src="./img/sliderAutumn/au5.jpg" alt="au5"></div>
+                    <div class="slider__main_img"><img id="main5" src="./img/sliderAutumn/au1.jpg" alt="au1"></div>
+                </div>
+            </div>
+
+            <div class="slider__right_window" id="slider__right_window">
+                <div class="slider__right">
+                    <div class="slider__right_img"><img id="right1" src="./img/sliderAutumn/au3.jpg" alt="au3"></div>
+                    <div class="slider__right_img"><img id="right2" src="./img/sliderAutumn/au4.jpg" alt="au4"></div>
+                    <div class="slider__right_img"><img id="right3" src="./img/sliderAutumn/au5.jpg" alt="au5"></div>
+                    <div class="slider__right_img"><img id="right4" src="./img/sliderAutumn/au1.jpg" alt="au1"></div>
+                    <div class="slider__right_img"><img id="right5" src="./img/sliderAutumn/au2.jpg" alt="au2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="slider_nav">
+            <button class="button__prev"><img src="./img/prev.svg" alt="prev"></button>
+            <div class="pagination">
+                <button class="pagination__item"></button>
+                <button class="pagination__item"></button>
+                <button class="pagination__item"></button>
+                <button class="pagination__item"></button>
+                <button class="pagination__item"></button>
+            </div>
+            <button class="button__next"><img src="./img/next.svg" alt="next"></button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__title">© Darya Shurinova</div>
+        <div class="footer__year">2023</div>
+    </footer>
+    <script src="./burger.js"></script>
+    <script src="./slider.js"></script>
+</body>
+
+</html>

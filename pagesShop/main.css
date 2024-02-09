@@ -1,0 +1,138 @@
+.main{
+    background: url(../img/slidersFon.jpg);
+    max-width: 1440px;
+}
+
+.main__text{
+    color: #000;
+font-family: Mate SC;
+font-size: 30px;
+font-weight: 300;
+line-height: 50px; 
+letter-spacing: 2px;
+padding: 40px 20px;
+}
+
+.sweets{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px auto;
+}
+.sweet__container {
+    background: url(../img/sweet_item_fon.jpg) no-repeat center top/cover;
+    max-width: 450px;
+    border: 1px solid #D3CDCA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   
+}
+.sweet__name {
+color: #000;
+font-family: Mate SC;
+font-size: 55px;
+font-style: normal;
+font-weight: 200;
+line-height: 50px; 
+letter-spacing: -1.92px;
+margin-top: 20px;
+text-align: center;
+}
+.sweet_photo {
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+box-shadow: 0px 4px 250px 0px rgba(0, 0, 0, 0.25);
+max-width: 300px;
+margin: 20px 50%;
+transform: translate(-50%);
+}
+.sweet__description {
+border-radius: 40px;
+border: 1px solid #958888;
+background: #FFF;
+max-width: 400px;
+margin-left: 25px;
+margin-bottom: 20px;
+}
+.sweet__description_name {
+    color: #000;
+font-family: Mate SC;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; 
+letter-spacing: 3px;
+margin: 10px 35px;
+}
+.sweet__description_value {
+    border-radius: 20px;
+background: #E9E1D5;
+width: 350px;
+height: 45px;
+color: #000;
+font-family: Mate SC;
+font-size: 33px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 3px;
+border: 1px solid #D3CDCA;
+text-align: center;
+line-height: 45px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+margin: 15px 20px;
+font-style: bold;
+}
+
+@media (min-width:180px) and (max-width:480px) {
+    .main{
+        background: url(../img/slidersFon.jpg);
+        max-width: 1440px;
+    }
+    .main__text{
+    font-size: 20px;
+    line-height: 25px; 
+    letter-spacing: 1px;
+    padding: 20px 10px;
+    }
+    .sweets{
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+    gap: 10px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .sweet__container {
+        max-width: 350px;
+    }
+    .sweet__name {
+    font-size: 40px;
+    line-height: 45px; 
+    margin-top: 15px;
+    }
+    .sweet_photo {
+    max-width: 250px;
+    margin: 10px 50%;
+    }
+    .sweet__description {
+    max-width: 340px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
+    .sweet__description_name {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 10px 15px;
+    }
+    .sweet__description_value {
+    width: 310px;
+    height: 40px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 10px 10px;
+    }
+    
+    
+    
+}
+

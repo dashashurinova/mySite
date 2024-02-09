@@ -1,0 +1,93 @@
+ <!-- <?php
+    $host = 'localhost'; // имя хоста
+    $user = 'f98315rl_baza';      // имя пользователя
+    $pass = '9kOK3my&';          // пароль
+    $name = 'f98315rl_baza';      // имя базы данных
+
+    $conn = new mysqli($host, $user, $pass, $name);
+                           
+    if($conn->connect_error){
+    echo'Ошибка подключения к базе данных';
+    die("Ошибка: " . $conn->connect_error);
+    exit();
+    }
+    // else {echo'uspeh';}
+?>  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./pagesShop/pagesShop.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Anton&family=Dancing+Script&family=Forum&family=IM+Fell+DW+Pica&family=Inter:wght@400;500&family=Meddon&family=Monoton&family=Montaga&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Anton&family=Dancing+Script&family=Forum&family=IM+Fell+DW+Pica&family=Inter:wght@400;500&family=Mate+SC&family=Meddon&family=Monoton&family=Montaga&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <title>Shop</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__label">Shurinova</div>
+            <button class="burger__button">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </button>
+            <ul class="nav__tools">
+                <li class="nav__item"><a href="./index.html">about me</a></li>
+                <li class="nav__item"><a href="./portfolio.html">portfolio</a></li>
+                <li class="nav__item"><a href="./sliders.html">sliders page</a></li>
+                <li class="nav__item"><a href="./contacts.html">contacts</a></li>
+                <li class="nav__item"><a href="./JSForFun.html">JS for fun</a></li>
+                <li class="nav__item nav__item_active"><a href="./shop.php">SQL</a></li>
+            </ul>
+        </nav>
+        <div class="header__title">SQL<br>  Bakery</div>
+    </header>
+    <main class="main"> 
+        <div class="main__text">This data was just pulled out of the database whish is situated
+             on the hosting, 
+            now I'm working on making a funny childish shop out of it.</div>
+        <section class="sweets">
+
+         <!-- <?php   $sql = "SELECT * FROM desserts";
+if($result = $conn->query($sql)){
+    foreach($result as $row){
+        echo "<div class='sweet__container'>";
+        echo "<p class='sweet__name'> ".$row["title"]. " </p>";
+        echo "<img class='sweet_photo' src=".$row["photo"]. " </img>";
+        echo "<div class='sweet__description'>";
+        echo "<div class='sweet__description_name'>Price</div>";
+        echo "<div class='sweet__description_value'>".$row["price"]. " </div>";
+        echo "<div class='sweet__description_name'>Weight</div>";
+        echo "<div class='sweet__description_value'>".$row["weight"]. "</div>";
+        echo "<div class='sweet__description_name'>Callories</div>";
+        echo "<div class='sweet__description_value'>".$row["callories"]. "</div>";
+        echo "</div>";
+        echo "</div>";
+    }
+    // echo "</table>";
+    // $result->free();
+} else{
+    echo "Ошибка: " . $conn->error;
+}
+$conn->close();?>  -->
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__title">© Darya Shurinova</div>
+        <div class="footer__year">2023</div>
+    </footer>
+    <script src="./burger.js"></script>
+</body>
+
+</html> 
