@@ -23,7 +23,7 @@ function showDate() {
         dateNum = siteDate.getDate(),
         year = siteDate.getFullYear();
     let months = ['January', 'Februaru', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'Desember']
-    let week = ['Monday', 'Tuesday', 'Wednesday', 'Thuesday', 'Friday', 'Saturday', 'Sunday']
+    let week = [,'Monday', 'Tuesday', 'Wednesday', 'Thuesday', 'Friday', 'Saturday']
     let ids = ['dayname', 'months', 'daynum', 'year']
     let values = [week[day], months[month], dateNum, year]
     ids.forEach((el, ind) => {
